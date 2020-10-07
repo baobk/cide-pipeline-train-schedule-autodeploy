@@ -1,10 +1,7 @@
-/* import shared library */
-@Library('jenkins-shared-library')_
 
 pipeline {
     agent any
-    environment {
-        //be sure to replace "sampriyadarshi" with your own Docker Hub username
+    environment {   
         DOCKER_IMAGE_NAME = "baobk/train-schedule"
         CANARY_REPLICAS = 0
     }
